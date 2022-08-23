@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 20px;
+            padding: 30px;
+        }
+
+        div+p {
+            background-color: yellow;
+        }
+
+        .name1 {
+            font-size: 50px;
+            color: darkblue;
+        }
+
+        .name1.name2 {
+            font-size: 40px;
+            color: brown;
+        }
+
+        .name3 .name4 {
+            font-size: 50px;
+            color: blue;
+        }
+
+
+
+        a {
+            font-size: 30px;
+        }
+
+        a:active {
+            color: rgb(243, 6, 6);
+        }
+
+        a:visited {
+            color: rgb(106, 129, 24);
+        }
+
+        input {
+            font-size: 20px;
+            color: black;
+        }
+
+        input:focus {
+            background-color: cadetblue;
+        }
+
+        input:valid {
+            background-color: yellow;
+        }
+
+        input:required {
+            background-color: rgb(179, 76, 76);
+        }
+
+        .container:hover {
+            border: solid red 10px;
+            background-color: aqua;
+        }
+
+        p:first-child {
+            font-size: 30px;
+            color: darkred;
+        }
+
+        p:last-child {
+            font-size: 25px;
+            color: rgb(143, 173, 87);
+        }
+
+        p:nth-child(4) {
+            font-size: 30px;
+            color: lightseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <h1>Div+p</h1>
+    <div>
+        <p>This is first para of first div</p>
+        <p>This is second para of first div</p>
+    </div>
+    <p>This is first para of immediately after div</p>
+    <p>This is second para of not immediately after div</p>
+    <div>
+        <p>This is first para of second div</p>
+        <p>This is second para of second div</p>
+    </div>
+    <hr>
+    <h1>.class1.class2</h1>
+    <div class="name1">Div with Name1</div>
+    <div class="name1 name2">Div with two classess i.e; Name1 + Name2</div>
+    <hr>
+    <h1>.class1 .class2</h1>
+    <div class="name3">
+        <div class="name4">Class Name3 desended of Class Name4</div>
+    </div>
+    <hr>
+    <div>
+        <h1>a:active</h1>
+        <a href="Css_Selector.html">This link is first link .It is active</a><br>
+        <a href="ArrayMethd.html">This link is second link .This link is active</a>
+    </div>
+    <hr>
+    <div>
+        <h1>Focus</h1>
+        <label for="">Input is focus</label> <input type="text">
+    </div>
+    <hr>
+    <div>
+        <h1>Placeholder</h1>
+        <label for="">Student Name :</label> <input type="text" placeholder="Student Name in Capital Letter"><br>
+        <label for="">Father Name :</label> <input type="text" placeholder="Father Name in Capital Letter"><br>
+        <label for="">Mother Name</label> <input type="text" placeholder="Mother Name in Capital Letter">
+    </div>
+    <hr>
+    <div>
+        <h1>Read-only Selector</h1>
+        <label for="">Employee Name :</label> <input type="text" value="Write Your Name"><br>
+        <label for="">Employee Id :</label> <input type="text" readonly value="Your id 12345"><br>
+
+    </div>
+    <hr>
+    <div>
+        <h1>Required</h1>
+        <label for="">Email id (Required):</label> <input required type="text"><br>
+        <label for="">Mobile Number(Optional):</label> <input type="text"><br>
+
+    </div>
+
+    <hr>
+    <div class="container">
+        <h1>Hover</h1>
+    </div>
+
+    <hr>
+    <h1>Pseudo Class</h1>
+    <div>
+        <p>First Paragraph</p>
+        <p>Second Paragraph</p>
+        <p>Third Paragraph</p>
+        <p>Fourth Paragraph</p>
+        <p>Fifth Paragraph</p>
+    </div>
+
+    <hr>
+    <h1>Disabled Input</h1>
+    <div>
+        Name :<input type="text"><br>
+        Address :<input type="text"><br>
+        Country : <input type="text" disabled value="India">
+    </div>
+    <hr>
+    <h1>Valid Input</h1>
+    <div>
+        <input type="email" value="support@example.com">
+    </div>
+    <hr>
+    <h1>Checked Input</h1>
+    <div>
+        <input type="radio" checked value="male" name="gender"> Male<br>
+        <input type="radio" value="female" name="gender"> Female<br>
+        <input type="checkbox" checked="checked" value="Bike"> I am a graduate<br>
+        <input type="checkbox" value="Car"> I am not a graduate
+    </div>
+
+</body>
+
+</html>

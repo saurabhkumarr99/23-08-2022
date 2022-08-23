@@ -1,0 +1,52 @@
+body{
+    background-color: antiquewhite;
+    font-size: 30px;
+    text-align: center;
+}
+
+header{
+    background-color: aquamarine;
+    width: 85%;
+    margin: 10px auto;
+}
+
+section{
+    background-color: chartreuse;
+    width: 85%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.container{
+    border: solid red 7px;
+    width: 80%;
+    height: 700px;
+    margin:10px auto;
+}
+
+#box1{
+    background-image: url("tiranga.jpg");
+    background-repeat: no-repeat;
+}
+
+#box2{
+    background-image: url("tiranga.jpg");
+    background-repeat: repeat-x;
+}
+
+#box3{
+    background-image: url("tiranga.jpg");
+    background-repeat: repeat-y;
+}
+
+#box4{
+    background-image: url("tiranga.jpg");
+    background-repeat: space;
+}
+
+#box5{
+    background-image: url("tiranga.jpg");
+    background-size: cover;
+}
+
+
